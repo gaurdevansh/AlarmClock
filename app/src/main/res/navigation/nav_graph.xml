@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/alarmFragment">
+
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.devanshgaur.alarmclock.ui.fragments.AlarmFragment"
+        android:label="AlarmFragment" />
+    <fragment
+        android:id="@+id/clockFragment"
+        android:name="com.devanshgaur.alarmclock.ui.fragments.ClockFragment"
+        android:label="ClockFragment" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.devanshgaur.alarmclock.ui.fragments.TimerFragment"
+        android:label="TimerFragment" />
+</navigation>
