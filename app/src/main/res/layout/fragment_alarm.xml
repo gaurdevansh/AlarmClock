@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <EditText
+        android:id="@+id/seconds"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        android:inputType="number"
+        android:hint="Time in seconds"/>
+
+    <Button
+        android:id="@+id/alarm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/seconds"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
-        android:text="Alarm" />
+        android:text="Set Alarm" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/alarm_btn"
+        app:layout_constraintStart_toStartOf="@id/alarm_btn"
+        app:layout_constraintEnd_toEndOf="@id/alarm_btn"
+        android:layout_marginTop="30dp"
+        android:text="Cancel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
